@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="trejito.css" media="screen">
+    <link rel="stylesheet" href="examples.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet">
+    <title>TrejoCode.CSS - Documentación</title>
+</head>
+<body bgcolor="#EEE">
+    <div class="introduction flex justify-center">
+        <div class="container">
+            <div class="column">
+                <div class="white-space-16"></div>
+                <h1>Introducción</h1>
+                <p>Hoja de estilos basada en Flexbox para crear estructuras</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="use flex justify-center">
+        <div class="container">
+            <div class="column">
+                <div class="white-space-16"></div>
+                <h1>Layout</h1>
+                <div class="white-space-16"></div>
+                <h2>.flex</h2>
+                <p>Convierte a todos los hijos flexibles</p>
+                <xmp>
+                    <div class="miDiv flex"></div>
+                </xmp>
+                <div class="miDiv flex"></div>
+                <h2>.container</h2>
+                <p>Contenedores, por defecto ocupan el 90%</p>
+                <xmp>
+                    <div class="miDiv flex">
+                        <div class="container">
+
+                        </div>
+                    </div>
+                </xmp>
+                <div class="miDiv flex">
+                    <div class="container">
+                    </div>
+                </div>
+                <h2>.row</h2>
+                <p>Crea una fila</p>
+                <xmp>
+                    <div class="miDiv flex">
+                        <div class="container">
+                            <div class="row">
+                                <div class="row">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="miDiv flex">
+                    <div class="container">
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+                <h2>.column</h2>
+                <p>Crea una columna</p>
+                <xmp>
+                    <div class="miDiv flex">
+                        <div class="container">
+                            <div class="column">
+                                Element1
+                                Element2
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="miDiv flex" id="miDiv1">
+                    <div class="container">
+                        <div class="column">
+                            <div class="miDiv"></div>
+                            <div class="miDiv"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-space-16"></div>
+                <h2>.row-responsive</h2>
+                <p>En móviles cambia de fila a columna</p>
+                <div class="white-space-16"></div>
+                <h1>Alineación</h1>
+                <div class="white-space-16"></div>
+                <h2>.justify-center</h2>
+                <p>Justifica el contenido al centro</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container"></div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>Está justificando a el CONTAINER</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center">
+                    <div class="container"></div>
+                </div>
+                <div class="white-space-16"></div>
+                <h2>.justify-start</h2>
+                <p>Justifica el contenido al inicio</p>
+                <xmp>
+                    <div class="miDiv flex justify-start">
+                        <div class="container"></div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>Está justificando a el CONTAINER</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-start">
+                    <div class="container"></div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.justify-end</h2>
+                <p>Justifica el contenido al final</p>
+                <xmp>
+                    <div class="miDiv flex justify-end">
+                        <div class="container"></div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>Está justificando a el CONTAINER</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-end">
+                    <div class="container"></div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.justify-arround</h2>
+                <p>Justifica el contenido al rededor</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container">
+                            <div class="row justify-arround">
+                                <div class="element"></div>
+                                <div class="element"></div>
+                                <div class="element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>Purpura: .elements / Verde: Fila </p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center" id="justifies">
+                    <div class="container">
+                        <div class="row justify-arround">
+                            <div class="element"></div>
+                            <div class="element"></div>
+                            <div class="element"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.justify-between</h2>
+                <p>Justifica el contenido al entre ellos</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container">
+                            <div class="row justify-between">
+                                <div class="element"></div>
+                                <div class="element"></div>
+                                <div class="element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>Purpura: .elements / Verde: Fila </p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center" id="justifies">
+                    <div class="container">
+                        <div class="row justify-between">
+                            <div class="element"></div>
+                            <div class="element"></div>
+                            <div class="element"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.align-center</h2>
+                <p>Alinea el contenido al centro</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="anyDiv">
+                                    <div class="text align-center">
+                                        <p>Hola</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>anyDiv está alineando el parrafo</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center" id="miDiv1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="anyDiv">
+                                <div class="text align-center">
+                                    <p>Hola</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.align-start</h2>
+                <p>Alinea el contenido al top</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="anyDiv">
+                                    <div class="text align-start">
+                                        <p>Hola</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>anyDiv está alineando el parrafo</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center" id="miDiv1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="anyDiv">
+                                <div class="text align-start">
+                                    <p>Hola</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.align-end</h2>
+                <p>Alinea el contenido al Bottom</p>
+                <xmp>
+                    <div class="miDiv flex justify-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="anyDiv">
+                                    <div class="text align-end">
+                                        <p>Hola</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+                <div class="white-space-8"></div>
+                <p>anyDiv está alineando el parrafo</p>
+                <div class="white-space-8"></div>
+                <div class="miDiv flex justify-center" id="miDiv1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="anyDiv">
+                                <div class="text align-end">
+                                    <p>Hola</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space-16"></div>
+                <h2>.white-space-8</h2>
+                <p>Espacio en blanco de 8px (0.5em)</p>
+                <div class="white-space-8"></div>
+                <h2>.white-space-16</h2>
+                <p>Espacio en blanco de 16px (1em)</p>
+                <div class="white-space-16"></div>
+                <h2>.white-space-32</h2>
+                <p>Espacio en blanco de 32px (2em)</p>
+                <div class="white-space-32"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
