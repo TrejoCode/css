@@ -4,9 +4,9 @@ Hoja de estilos basada en Flexbox para crear estructuras.
 ## Importar hoja de estilos
 
 ```HTML
-<link rel="stylesheet" href="trejito.css" media="screen">
+<link rel="stylesheet" href="trejocode.css" media="screen">
 ```
 
 ### Documentación:
 
-https://www.trejocode.com/trejocodecss/
+Trabajo en ello.
