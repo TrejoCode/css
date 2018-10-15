@@ -17,8 +17,8 @@ header .social a i:hover {
 }
 
 #miDiv {
-    border: 1px solid black;
-    height: 100px;
+    border: 1px solid gray;
+    min-height: 100px;    
 }
 
 #miDiv .container {
@@ -27,4 +27,59 @@ header .social a i:hover {
 
 #miDiv .auto {
     background: lightblue;
+}
+
+.miDivRow {
+    height: 100px;
+}
+
+.miDivRow .row:nth-child(1) {
+    background: lightblue;    
+}
+
+.miDivRow .row:nth-child(2) {
+    background: lightcoral;
+}
+
+.miDivcolumn div:nth-child(1) {
+    height: 50px;
+    background: lightblue;
+}
+
+.miDivcolumn div:nth-child(2) {
+    height: 50px;
+    background: lightcoral;
+}
+
+.miDivRowResponsive div:nth-child(1) {
+    background: lightblue;
+}
+
+.miDivRowResponsive div:nth-child(2) {
+    background: lightcoral;
+}
+
+@media screen and (max-width: 768px) {
+    .miDivRowResponsive div:nth-child(1) {
+        height: 50px;
+    }
+
+    .miDivRowResponsive div:nth-child(2) {
+        height: 50px;
+    }
+}
+
+.row-js div {
+    width: 25%;
+    background: lightblue;
+}
+
+.column-js div {
+    width: 25%;
+    height: 50px;
+    background: lightblue;
+}
+
+#miDiv .pl {
+    width: 100%;
 }

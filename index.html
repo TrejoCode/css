@@ -35,9 +35,20 @@
                     <div class="column">
                         <h1>trejocode.css</h1>
                         <div class="white-space-8"></div>
-                        <h5>
-                            Hoja de estilos basado en flexbox diseñado para realizar estructuras flexibles.
-                        </h5>                        
+                        <h4 class="text-justify">
+                            <strong>
+                                Hoja de estilos basado en flexbox diseñado para realizar estructuras flexibles.
+                            </strong>
+                        </h4>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Cuando se trabaja con flexbox las hojas de estilos se vuelven inmensas, el padre requiere propiedades flexibles, pero
+                            los hijos de igual manera requieren propiedades flexibles y los hijos de los hijos también requieren propiedades
+                            flexibles, esto ocaciona redundancia del código.
+                        </p>
+                        <p class="text-justify">
+                            trejocode.css define todas las propiedades flexibles necesarias es un solo archivo de css, todas las propiedades son hackeables, trejocode.css es de licencia Mozilla Public Licence.
+                        </p>
                     </div>                    
                 </div>
             </div>
@@ -48,12 +59,11 @@
                 <div class="container">
                     <div class="column">
                         <h2>
-                            Básicos:
+                            1.- Básicos:
                         </h2>
                         <div class="white-space-8"></div>
-                        <p>
-                            El uso de las propiedades de trejocode.css solo aplicarán si al contenedor padre le es asignado la clase <strong>.flex</strong>
-                            <br> Revisar <cite><strong>trejocode.css</strong></cite> antes de empezar las siguientes practicas, el código es completamente hackeable.
+                        <p class="text-justify">
+                            El uso de las propiedades de trejocode.css solo aplicarán si al elemento principal le es asignado la clase <strong>.flex</strong>
                         </p>
                         <div class="white-space-16"></div>
                         <pre>
@@ -66,12 +76,13 @@
 
                         <!-- START PREVIEW-->
                         <div class="white-space-16"></div>
-                        <h2>
+                        <h3>
                             .container
-                        </h2>
+                        </h3>
                         <div class="white-space-8"></div>
-                        <p>
-                            El contenedor es un componente cuya función es cubrir por defecto el 90% del ancho.
+                        <p class="text-justify">
+                            El contenedor es un componente cuya función es cubrir por defecto el 90% del ancho. <br>
+                            Por lo general todas las librerías utilizan un contenedor, su función principal es encapsular elementos en determinado espacio con el fin de asegurar un área segura que garantize que todos los elementos dentro de un contenedor no sean desproporcionales en diferentes resoluciones.
                         </p>
                         <div class="white-space-16"></div>
                         <pre>
@@ -87,19 +98,21 @@
 
                         <div id="miDiv">
                             <div class="container">
-
+                                Azul = Contenedor
                             </div>
                         </div> 
                         <!-- END PREVIEW-->
 
                         <!-- START PREVIEW-->
                         <div class="white-space-16"></div>
-                        <h2>
+                        <h3>
                             .auto
-                        </h2>
+                        </h3>
                         <div class="white-space-8"></div>
-                        <p>
-                            Auto establece que un elemento solo ocupe el ancho necesario.
+                        <p class="text-justify">
+                            <strong> Todos los elementos por defecto utilizan el width de 100%. </strong> <br>
+                            .auto establece que un elemento solo ocupe el ancho necesario, esta medición se basa en el contenido del elemento.
+                            
                         </p>
                         <div class="white-space-16"></div>
                         <pre>
@@ -120,11 +133,423 @@
                         </div>
                         <!-- END PREVIEW-->
 
+                        <div class="white-space-48"></div>
+                        <h2>
+                            2.- Dirección de los elementos
+                        </h2>
+                        <div class="white-space-32"></div>
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .row
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Todos los elementos flexibles por defecto contienen una determinada dirección X,Y, un row establece que todos los elementos se acoplen en fila (en dirección X). Por defecto todos los elementos son .row solo se debe nombrar cuando es muy necesario. <br>
+                            <strong>Todos los elementos se ajustan en width automáticamente en base al número de elementos dentro de una .row</strong>
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="row"&gt; Div 1 &lt;/div&gt;
+    &lt;div class="row"&gt; Div 2 &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="miDivRow">
+                            <div class="row"> Div 1 </div>
+                            <div class="row"> Div 2 </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .column
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Las columnas modifican la dirección de los elementos para acoplarse en columna (en dirección Y).
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                                                    <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="column"&gt;
+        &lt;div&gt; Elemento 1 &lt;/div&gt;
+        &lt;div&gt; Elemento 2 &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+                        <div class="white-space-16"></div>                        
+                        
+                            <div class="column miDivcolumn " id="miDiv">
+                                <div> Elemento 1 </div>
+                                <div> Elemento 2 </div>
+                            </div>                        
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .row-responsive
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            .row-responsive soluciona el "común" problema de las direcciones en resoluciones moviles, su comportamiento es de .row, pero en resoluciones menores a 768px (móviles) la dirección pasará a columna.
+                            <br> <strong> Reduce el tamaño del navegador para notar el comportamiento. </strong>
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                                                    <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="row-responsive"&gt;
+        &lt;div&gt; Elemento 1 &lt;/div&gt;
+        &lt;div&gt; Elemento 2 &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                                            </code>
+                                                                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="row-responsive miDivRowResponsive " id="miDiv">
+                            <div> Elemento 1 </div>
+                            <div> Elemento 2 </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <div class="white-space-48"></div>
+                        <h2>
+                            3.- Alineación
+                        </h2>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Los elementos se pueden alinear en su plano X,Y.
+                        </p>
+                        <div class="white-space-32"></div>
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .justify-start
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano x (row) </strong>al inicio. <br>
+                            Esta es una propiedad por defecto de todos los elementos.
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="row  justify-start"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="row row-js justify-start" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .justify-center
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano x (row) </strong>al centro.                            
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="row  justify-center"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="row row-js justify-center" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .justify-end
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano x (row) </strong>al final.                            
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="row  justify-end"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="row row-js justify-end" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .align-start
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano y (column) </strong>al inicio. <br>
+                            Esta es una propiedad por defecto de todos los elementos.
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="column  align-start"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="column column-js justify-start" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .align-center
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano y (column) </strong>al centro. <br>
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="column  align-center"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="column column-js justify-center" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .align-end
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Alinea todos los elementos en el <strong> plano y (column) </strong>al final. <br>
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;
+    &lt;div class="column  align-end"&gt;
+        &lt;div&gt; Elemento &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div class="column column-js justify-end" id="miDiv">
+                            <div> Elemento </div>
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <div class="white-space-48"></div>
+                        <h2>
+                            4.- Decoradores
+                        </h2>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">
+                            Los siguientes elementos no son obligatorios, son utilidades.
+                        </p>
+                        <div class="white-space-32"></div>
+                        
+                        <h3>
+                            4.1- Alineación del texto
+                        </h3>
+                        <div class="white-space-8"></div>                                              
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .text-left
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">                            
+                            Alinea el texto a la izquierda, <strong> esta es una propieda por defecto. </strong>
+                            
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;    
+    &lt;p class="text-left"&gt; Texto largo en idioma desconocido &lt;/p&gt;    
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="pl">                            
+                            <p class="text-left">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam ullam.
+                            </p>                                       
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .text-center
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">                            
+                            Alinea el texto al centro.
+                            
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;    
+    &lt;p class="text-center"&gt; Texto largo en idioma desconocido &lt;/p&gt;    
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="pl">                            
+                            <p class="text-center">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam ullam.
+                            </p>                                       
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .text-justify
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">                            
+                            Justifica el texto.
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;    
+    &lt;p class="text-justify"&gt; Texto largo en idioma desconocido &lt;/p&gt;    
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="pl">                            
+                            <p class="text-justify">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam ullam.
+                            </p>                                       
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .text-right
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">                            
+                            Alinea el texto a la derecha.
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;    
+    &lt;p class="text-right"&gt; Texto largo en idioma desconocido &lt;/p&gt;    
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="pl">                            
+                            <p class="text-right">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam ullam.
+                            </p>                                       
+                        </div>
+                        <!-- END PREVIEW-->
+
+                        <div class="white-space-32"></div>
+                        <h3>
+                            4.2- Transformación del texto
+                        </h3>
+                        <div class="white-space-8"></div>
+
+                        <!-- START PREVIEW-->
+                        <div class="white-space-16"></div>
+                        <h3>
+                            .uppercase
+                        </h3>
+                        <div class="white-space-8"></div>
+                        <p class="text-justify">                            
+                            Converte el texto en mayúsculas
+                        </p>
+                        <div class="white-space-16"></div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class="flex"&gt;    
+    &lt;p class="uppercase"&gt; Texto largo en idioma desconocido &lt;/p&gt;    
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="white-space-16"></div>
+                        
+                        <div id="miDiv" class="pl">                            
+                            <p class="uppercase">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum
+                            </p>                                       
+                        </div>
+                        <!-- END PREVIEW-->
+                        <div class="white-space-64"></div>
+
                     </div> <!--END BASICS COLUMN-->
                 </div>
             </div>
 
-        </div> 
+        </div>
     </div>
 
     <script src="src/prism.js"></script>
