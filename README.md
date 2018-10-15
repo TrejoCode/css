@@ -1,6 +1,6 @@
 # trejocode.css
 Hoja de estilos basada en Flexbox para crear estructuras.
-Descargar en: /trejocodeHere
+Descargar en: src/trejocode Here/ trejocode.css
 
 ## Importar hoja de estilos
 
