@@ -59,6 +59,26 @@ header .social a i:hover {
     background: lightcoral;
 }
 
+#miDiv .wrap div {
+    max-width: 100%; 
+    width: 30%;   
+    min-width: 33.3%;
+    background: lightblue;
+    border: 1px solid red;
+}
+
+.ws .white-space-8, .ws .white-space-16, .ws .white-space-24, .ws .white-space-32, .ws .white-space-48, .ws .white-space-64  {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.ws {
+    border: none;
+} 
+
+h1, h2, h3, h4 {
+    color: #5e5959;
+}
+
 @media screen and (max-width: 768px) {
     .miDivRowResponsive div:nth-child(1) {
         height: 50px;
