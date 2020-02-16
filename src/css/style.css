@@ -165,3 +165,31 @@ h1, h2, h3, h4 {
 #miDiv .pl {
     width: 100%;
 }
+
+.white-space-4 {
+    height: 4px;
+}
+
+.white-space-8 {
+    height: 48px;
+}
+
+.white-space-16 {
+    height: 16px;
+}
+
+.white-space-24 {
+    height: 24px;
+}
+
+.white-space-32 {
+    height: 32px;
+}
+
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-64 {
+    height: 64px;
+}
