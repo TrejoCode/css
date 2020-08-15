@@ -1,0 +1,25 @@
+/*
+ *  @version 1.0.0
+ *  @author Trejocode - Sergio
+ *  @description Estilos para las tablas
+*/
+
+table {
+
+    caption { margin-bottom: 8px; }
+
+}
+
+.table-responsive {
+
+    overflow-x: auto;
+
+    table {
+        width: 100%;
+    }
+
+}
+
+.table-auto { table-layout: auto; }
+
+.table-equal { table-layout: fixed; }

@@ -1,0 +1,179 @@
+/*
+* 	@version 1.4.0
+*	@author Trejocode - Sergio
+*   @description Estilos de fuente y tipografía
+*/
+
+/*  FUENTE 
+    ===============
+*/
+
+$IBM: 'IBM Plex Sans', sans-serif;
+
+
+/*   Dimensiones    */
+
+$fontMini: 		0.8rem;
+$fontTiny: 		0.9rem;
+$fontText: 		0.93rem;
+$fontSmall: 	1rem;
+$fontRegular: 	1.2rem;
+$fontMedium: 	1.4rem;
+$fontLarge: 	1.6rem;
+$fontHuge: 		1.8rem;
+$fontDouble: 	2rem;
+$fontTriple: 	2.5rem;
+
+.font-triple {
+	font-size: $fontTriple;
+}
+
+.font-double {
+	font-size: $fontDouble;
+}
+
+.font-huge {
+	font-size: $fontHuge;
+}
+
+.font-large {
+	font-size: $fontLarge;
+}
+
+.font-medium {
+	font-size: $fontMedium;
+}
+
+.font-regular {
+	font-size: $fontRegular;
+}
+
+.font-small {
+	font-size: $fontSmall;
+}
+
+.font-text {
+	font-size: $fontText;
+}
+
+.font-tiny {
+	font-size: $fontTiny;
+}
+
+.font-mini {
+	font-size: $fontMini;
+}
+
+
+/*    WEIGHTS 
+
+    - Basado en 'IBM Plex Sans'
+
+*/
+
+
+$weightRegular: 400;
+$weightMedium: 	500;
+$weightSemi: 	600;
+$weightBold: 	700;
+
+
+h1, h2, h3, h4, h5, h6, p, a, b, span, 
+th, td, li, caption, label, strong, legend, 
+em, button, select, option, input, button {
+
+    color: var(--black);
+    font-family: $IBM;
+
+}
+
+h1 {
+
+	font-size: $fontHuge;
+    font-weight: $weightBold;
+    
+}
+
+h2 {
+
+	font-size: $fontLarge;
+    font-weight: $weightSemi;
+    
+}
+
+h3 {
+
+	font-size: $fontMedium;
+    font-weight: $weightSemi;
+    
+}
+
+h4 {
+
+	font-size: $fontRegular;
+    font-weight: $weightMedium;
+    
+}
+
+h5 {
+
+	font-size: $fontSmall;
+    font-weight: $weightMedium;
+    
+}
+
+h6 {
+
+	font-size: $fontText;
+    font-weight: $weightRegular;
+    
+}
+
+p, a, li, label, caption {
+
+	color: var(--gray);
+	line-height: 1.5rem;
+    font-size: $fontText;
+
+}
+
+b, i, span, strong, em {
+
+	color: inherit;
+    font-size: inherit;
+    
+}
+
+.weight-regular { font-weight: $weightRegular; }
+
+
+.weight-medium { font-weight: $weightMedium; }
+
+
+.weight-semi { font-weight: $weightSemi; }
+
+
+.weight-bold { font-weight: $weightBold; }
+
+
+.text-uppercase { text-transform: uppercase; }
+
+
+.text-underline { text-decoration: underline; }
+
+
+
+::selection {
+
+	color: var(--secondary);
+    background-color: var(--primary);
+    
+}
+
+@media screen and (max-width: 768px) {
+
+	.font-triple { font-size: $fontDouble; }
+	
+	.font-double { font-size: $fontLarge; }
+
+}
