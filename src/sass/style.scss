@@ -8,3 +8,12 @@
 @import './core/spacing';
 @import './core/colors';
 @import './core/fonts';
+
+// Componentes
+@import './components/header';
+@import './components/aside';
+@import './components/content';
+
+
+// Páginas
+@import './pages/index';

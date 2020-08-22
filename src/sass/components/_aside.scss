@@ -1,0 +1,36 @@
+/*
+ * @version 1.1.0
+ * @description Estilos del componente <Aside>
+*/
+
+.aside {
+
+    width: 20%;
+    margin: $marginLarge 0;
+
+    li { 
+        font-weight: $weightSemi;
+        list-style: none; 
+    }
+
+    .level {
+
+        padding: $paddingNormal $paddingMedium;
+
+        &.active{
+
+            background-color: var(--white);
+            border: 1px solid rgb(230, 236, 241);
+
+        }
+
+    }
+
+    .sublevel {
+
+        padding: 0.25rem $paddingLarge;
+
+    }
+
+
+}
