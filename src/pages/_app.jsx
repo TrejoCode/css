@@ -6,6 +6,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import MDXProvider   from '../components/MDX/MDXProvider';
 import * as ga       from '../helpers/ga';
 import '../sass/style.scss';    
 
@@ -25,7 +26,11 @@ const App = ({ Component, pageProps }) => {
 
     }, []);
 
-    return <Component { ...pageProps } />
+    return(
+        <MDXProvider>
+            <Component { ...pageProps } />
+        </MDXProvider>
+    );
 
 };
     

@@ -5,13 +5,14 @@
 */
 
 import React 	from 'react';
+import MD       from '../../md/index.mdx';
 
 const Content = () => {
 
     return(
         <div className="content justify-center">
-            <div className="container">
-                
+            <div className="container column">
+                <MD />
             </div>
 		</div>
     );
