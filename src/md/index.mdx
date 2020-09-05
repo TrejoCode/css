@@ -1,6 +1,10 @@
 import WhiteSpace from '../components/spacers';
 
-# Introducción
+# Core.css
+
+<WhiteSpace size = "64" />
+
+## Introducción
 
 <WhiteSpace size = "32" />
 
@@ -13,3 +17,205 @@ Maquetando con *flexbox* las hojas de estilos se tornan extensas, el *parent* aq
 <WhiteSpace size = "8" />
 
 **core.css** define todas las propiedades flexibles necesarias en un único archivo de *css* o *sass*, todas las propiedades son hackeables, pudes modificar la hoja de estilos a tu preferencia, core.css es libre y siempre lo será.
+
+<WhiteSpace size = "48" />
+
+## Implementación
+
+<WhiteSpace size = "32" />
+
+### CSS
+
+<WhiteSpace size = "16" />
+
+Localizar en el repositorio: **css/core.css**
+
+<WhiteSpace size = "16" />
+
+```html
+<link rel="stylesheet" href="core.css" media="screen" />
+```
+
+<WhiteSpace size = "24" />
+
+### SASS
+
+<WhiteSpace size = "16" />
+
+Localizar en el repositorio: **sass/core.scss**
+
+<WhiteSpace size = "16" />
+
+```js
+import '../sass/core.scss';
+```
+
+<WhiteSpace size = "48" />
+
+## Básicos
+
+<WhiteSpace size = "16" />
+
+Aplicar **core.css** es realmente sencillo el contenedor padre deberá contar con la clase ***.flex***, a partir de ellos los siguientes clases podrán aplicarse.
+
+<WhiteSpace size = "8" />
+
+**Importante:** No afecta al comportamiento de otras hojas de estilos.
+
+<WhiteSpace size = "32" />
+
+### .flex
+
+<WhiteSpace size = "16" />
+
+```html
+<html>
+    <head> <!-- Contenido --> </head>
+    <body>
+        <div class="flex">
+            <!-- Listo, puedes utilizar cualquier clase de core.css -->
+        </div>
+    </body>
+</html>
+```
+
+<WhiteSpace size = "32" />
+
+### .container
+
+<WhiteSpace size = "16" />
+
+El contenedor es un componente cuya función es cubrir el **90%** del ancho de pantalla o un máximo de **1440px** y en móviles < 576px ocupará el **92%** del ancho de la pantalla.
+
+<WhiteSpace size = "8" />
+
+Por lo general todas las librerías utilizan un contenedor, su función es agrupar elementos en determinado espacio con el fin de asegurar un área segura que garantize que todos los elementos dentro de un contenedor no sean desproporcionales entre las diferentes resoluciones de dispositivos.
+
+<WhiteSpace size = "16" />
+
+```html
+    <div class="flex">
+        <div class="container">
+        </div>
+    </div>
+```
+
+<WhiteSpace size = "32" />
+
+### .full
+
+<WhiteSpace size = "16" />
+
+Los elementos con la clase *.full* obtendrán el 100% del ancho de la pantalla o con base a su contenedor.
+
+
+<WhiteSpace size = "16" />
+
+```html
+    <div class="flex">
+        <div class="full">
+            <p>Soy un texto con un ancho completo</p>
+        </div>
+    </div>
+```
+
+<WhiteSpace size = "16" />
+
+```html
+    <div class="flex">
+        <div class="container">
+            <div class="full">
+                <p>Soy un texto con un ancho completo respecto al contenedor</p>
+            </div>
+        <div>
+    </div>
+```
+
+<WhiteSpace size = "32" />
+
+### .auto
+
+<WhiteSpace size = "16" />
+
+Establece que un elemento solo ocupe el ancho necesario, esta medición se basa en el contenido iterno del elemento.
+
+
+<WhiteSpace size = "16" />
+
+```html
+    <div class="flex">
+        <div class="auto">
+            <p>Soy una p con ancho automático</p>
+        </div>
+    </div>
+```
+
+<WhiteSpace size = "48" />
+
+## Dirección de los elementos
+
+<WhiteSpace size = "16" />
+
+Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes, el eje principal y el eje cruzado (X, Y). **Filas y columnas**.
+
+<WhiteSpace size = "32" />
+
+### .row
+
+<WhiteSpace size = "16" />
+
+Establece que todos los elementos se acoplen en fila (en dirección X)
+
+
+<WhiteSpace size = "16" />
+
+```html
+<div class="flex">
+    <div class="row"> 
+        <div> Azul = Elemento 1 </div>
+        <div> Rojo = Elemento 2 </div>
+    </div>
+</div>
+```
+
+<WhiteSpace size = "32" />
+
+### .column
+
+<WhiteSpace size = "16" />
+
+Establece que todos los elementos se acoplen en columna (en dirección Y)
+
+<WhiteSpace size = "16" />
+
+```html
+<div class="flex">
+    <div class="column">
+        <div> Azul = Elemento 1 </div>
+        <div> Rojo = Elemento 2 </div>
+    </div>
+</div>
+```
+
+<WhiteSpace size = "32" />
+
+### .row-responsive
+
+<WhiteSpace size = "16" />
+
+Establece la dirección de los elementos en escritorio, laptops y televisores en fila (x) y si la resolución sea mayor a **768px**, pero cambiará la dirección a columna (Y) en tabletas y móviles cuya resolución es menor a **768px**
+
+<WhiteSpace size = "8" />
+
+Redimensiona el tamaño del navegador para que puedas notar el comportamiento.
+
+<WhiteSpace size = "16" />
+
+```html
+<div class="flex">
+    <div class="row-responsive">
+        <div> Azul = Elemento 1 </div>
+        <div> Rojo = Elemento 2 </div>
+    </div>
+</div>
+```

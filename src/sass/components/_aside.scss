@@ -5,7 +5,10 @@
 
 .aside {
 
+    top: 1rem;
     width: 20%;
+    position: sticky;
+    align-self: flex-start;
     margin: $marginLarge 0;
 
     li { 
