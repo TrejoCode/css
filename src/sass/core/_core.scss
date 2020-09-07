@@ -63,6 +63,7 @@ textarea, optgroup {
 a {
 
     color: inherit;
+    font-size: inherit;
     word-break: keep-all;
     text-decoration: none;
     background-color: transparent;
@@ -170,7 +171,7 @@ img {
 
 }
 
-.justify-arround {
+.justify-around {
 
     display: flex;
     justify-content: space-around;

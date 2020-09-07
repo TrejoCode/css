@@ -1,0 +1,177 @@
+[
+    {
+        "isMultiple": false,
+        "title": "📌 Introducción",
+        "anchor": "#introduccion"
+    },
+    {
+        "isMultiple": true,
+        "title": "📝 Implementación",
+        "anchor": "#implementacion",
+        "sublevels": [
+            {
+                "title": "CSS",
+                "anchor": "#"
+            },
+            {
+                "title": "SASS",
+                "anchor": "#"
+            }
+        ]
+    }, 
+    {
+        "isMultiple": true,
+        "title": "✔️ Básicos",
+        "anchor": "#basicos",
+        "sublevels": [
+            {
+                "title": ".flex",
+                "anchor": "#"
+            },
+            {
+                "title": ".container",
+                "anchor": "#"
+            },
+            {
+                "title": ".full",
+                "anchor": "#"
+            },
+            {
+                "title": ".auto",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": true,
+        "title": "🔃 Dirección",
+        "anchor": "#direccion",
+        "sublevels": [
+            {
+                "title": ".row",
+                "anchor": "#"
+            },
+            {
+                "title": ".column",
+                "anchor": "#"
+            },
+            {
+                "title": ".row-reponsive",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": true,
+        "title": "🔛 Justificación",
+        "anchor": "#justificacion",
+        "sublevels": [
+            {
+                "title": ".justify-start",
+                "anchor": "#"
+            },
+            {
+                "title": ".justify-center",
+                "anchor": "#"
+            },
+            {
+                "title": ".justify-end",
+                "anchor": "#"
+            },
+            {
+                "title": ".justify-justify",
+                "anchor": "#"
+            },
+            {
+                "title": ".justify-around",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": true,
+        "title": "🔝 Alineación",
+        "anchor": "#alineacion",
+        "sublevels": [
+            {
+                "title": ".align-start",
+                "anchor": "#"
+            },
+            {
+                "title": ".align-center",
+                "anchor": "#"
+            },
+            {
+                "title": ".align-end",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": true,
+        "title": "🔣 Agrupación",
+        "anchor": "#agrupacion",
+        "sublevels": [
+            {
+                "title": ".wrap",
+                "anchor": "#"
+            },
+            {
+                "title": ".nowrap",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": false,
+        "title": "⏸️ Espacio en blanco",
+        "anchor": "#espacios"
+    },
+    {
+        "isMultiple": true,
+        "title": "🖼️ Imágenes",
+        "anchor": "#imagenes",
+        "sublevels": [
+            {
+                "title": ".responsive-img",
+                "anchor": "#"
+            },
+            {
+                "title": ".cover-img",
+                "anchor": "#"
+            },
+            {
+                "title": ".contain-img",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": true,
+        "title": "📝 Decoradores de texto",
+        "anchor": "#decoradores",
+        "sublevels": [
+            {
+                "title": ".text-left",
+                "anchor": "#"
+            },
+            {
+                "title": ".text-center",
+                "anchor": "#"
+            },
+            {
+                "title": ".text-right",
+                "anchor": "#"
+            },
+            {
+                "title": ".text-justify",
+                "anchor": "#"
+            }
+        ]
+    },
+    {
+        "isMultiple": false,
+        "title": "🏷️ Referencias",
+        "anchor": "#referencias"
+    }
+]

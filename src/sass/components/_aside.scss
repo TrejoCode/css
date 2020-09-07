@@ -12,8 +12,9 @@
     margin: $marginLarge 0;
 
     li { 
+        cursor: pointer;
+        list-style: none;
         font-weight: $weightSemi;
-        list-style: none; 
     }
 
     .level {
@@ -32,6 +33,12 @@
     .sublevel {
 
         padding: 0.25rem $paddingLarge;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        
+        display: none;
 
     }
 
