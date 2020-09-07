@@ -1,0 +1,44 @@
+/*
+ *  @version 1.4.0
+ *  @author Trejocode - Sergio
+ *  @description: Espacios en blanco, margenes y paddings en factor 8px.
+*/
+
+
+/*      Paddings       */
+
+$paddingSmall:      0.5rem;
+$paddingNormal:     1rem;
+$paddingMedium:     1.5rem;
+$paddingSemi:       2rem;
+$paddingLarge:      2.5rem;
+$paddingHuge:       3rem;
+
+
+/*      Margins       */
+
+$marginSmall:       0.5rem;
+$marginNormal:      1rem;
+$marginMedium:      1.5rem;
+$marginSemi:        2rem;
+$marginLarge:       2.5rem;
+$marginHuge:        3rem;
+
+
+/*   Espacios en blanco   */
+
+.white-space-4 { height: 0.25rem; }
+
+.white-space-8 { height: 0.5rem; }
+
+.white-space-16 { height: 1rem; }
+
+.white-space-24 { height: 1.5rem; }
+
+.white-space-32 { height: 2rem; }
+
+.white-space-40 { height: 2.5rem; }
+
+.white-space-48 { height: 3rem; }
+
+.white-space-64 { height: 4rem; }

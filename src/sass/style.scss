@@ -1,0 +1,20 @@
+/*
+ *  @version 1.4.0
+ *  @author Trejocode - Sergio
+ *  @description Constructor de la hoja de estilos
+*/
+
+@import './core/core';
+@import './core/spacing';
+@import './core/colors';
+@import './core/fonts';
+
+// Componentes
+@import './components/header';
+@import './components/aside';
+@import './components/content';
+@import './components/samples';
+
+
+// Páginas
+@import './pages/index';

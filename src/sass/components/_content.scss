@@ -1,0 +1,23 @@
+/*
+ * @version 1.1.0
+ * @description Estilos del componente <Content>
+*/
+
+.content {
+
+    width: 80%;
+    min-height: 90vh;
+    padding: $paddingLarge 0;
+    background-color: var(--white);
+
+    @media screen and (max-width: 1024px) {
+        
+        width: 100%;
+
+        pre {
+            overflow-x: scroll;
+        }
+
+    }
+
+}

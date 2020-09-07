@@ -1,0 +1,116 @@
+/*
+ * @version 1.1.0
+ * @description Estilos para desmostración del core
+*/
+
+.sample {
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--gray);
+    b { padding: $paddingNormal; }
+
+    @media screen and (max-width: 768px) {
+        b {
+            font-size: $fontMini;
+        }
+    }
+
+}
+
+.sample1 {
+    .container {
+        background-color: lightblue;
+    }
+}
+
+.sample2 {
+    background-color: lightblue;
+}
+
+.sample3 {
+    background-color: lightblue;
+    .full { background-color: lightgray; }
+}
+
+.sample4 {
+    b { background-color: lightgray; }
+}
+
+.sample5, .sample6, .sample7 {
+    .element1 {
+        min-height: 30px;
+        background-color: lightblue;
+    }
+    .element2 {
+        min-height: 30px;
+        background-color: coral;
+    }
+    .element3 {
+        min-height: 30px;
+        background-color: lightgreen;
+    }
+}
+
+.sample8 {
+    .element1 {
+        width: 50%;
+        min-height: 30px;
+        background-color: lightblue;
+    }
+    .element2 {
+        width: 50%;
+        min-height: 30px;
+        background-color: coral;
+    }
+    .element3 {
+        width: 50%;
+        min-height: 30px;
+        background-color: lightgreen;
+    }
+    .element4 {
+        width: 50%;
+        min-height: 30px;
+        background-color: lightpink;
+    }
+    @media screen and (max-width: 768px) {
+        b { padding: 0.5rem; }
+    }
+}
+
+.sample9 {
+
+    border: none;
+    height: auto;
+    min-height: auto;
+    max-height: 200px;
+
+    .spacer {
+        height: 16px;
+    }
+
+    .white-space-4 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-8 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-16 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-24 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-32 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-48 {
+        border: 1px solid lightcoral;
+    }
+    .white-space-64 {
+        border: 1px solid lightcoral;
+    }
+}
+
+.sample10 {
+    height: auto;
+}

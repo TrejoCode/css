@@ -1,0 +1,282 @@
+/*
+ *  @version 1.4.0
+ *  @author Trejocode - Sergio
+ *  @description Hoja de estilos basada en flexbox para maquetar estructuras flexibles
+*/
+
+/* RESET
+   =============================
+   Estas propiedades permiten la compatibilidad de uniformidad cruzada para los navegadores.
+*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    &::before { box-sizing: border-box; }
+
+    &::after { box-sizing: border-box; }
+
+}
+
+:root { font-size: 16px; }
+
+html {
+
+    font-size: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+body {
+
+    overflow-x: hidden;
+    background-color: #F6F6F6;
+
+}
+
+iframe { border: none; }
+
+input,  select,
+option, button,
+textarea, optgroup {
+
+    margin: 0;
+	border: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.15;
+    font-family: inherit;
+
+}
+
+[type="checkbox"],
+[type="radio"] {
+
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+
+    color: inherit;
+    font-size: inherit;
+    word-break: keep-all;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+img {
+
+    height: auto;
+    max-width: 100%;
+    border-style: none;
+
+}
+
+
+/* CLASES
+   =============================
+	1. = FLEX LAYOUT
+	2. = ALINEACIÓN
+    3. = ESPACIOS EN BLANCO
+    4. = IMÁGENES
+    6. = DECORATORES
+*/
+
+
+.flex {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.responsive-img {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.row-responsive {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nowrap {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+
+/*    ALINEACIÓN    */
+
+
+.justify-center {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.justify-start {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.justify-end {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.justify-between {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.justify-around {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.align-center {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.align-start {
+
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.align-end {
+
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.auto {
+
+    width: auto;    
+    display: flex;
+
+}
+
+.full {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.container {
+
+    width: 90%;
+    display: flex;
+
+}
+
+
+/*    ALINEACIÓN DEL TEXTO    */
+
+
+.text-left { text-align: left; }
+
+
+.text-center { text-align: center; }
+
+
+.text-justify { text-align: justify; }
+
+
+.text-right { text-align: right; }
+
+
+
+/*    IMÁGENES    */
+
+.cover-img { object-fit: cover; }
+
+
+.contain-img { object-fit: contain; }
+
+
+
+/*    DECORADORES    */
+
+.hidden { display: none !important; }
+
+
+.cursor-pointer { cursor: pointer; }
+
+
+.grid { display: grid; }
+
+
+
+/* MEDIA QUERIES
+   =============================
+*/
+
+@media screen and (min-width: 1440px) {
+
+    .container { max-width: 1300px; }
+
+}
+
+
+@media screen and (max-width: 768px) {    
+    
+    .row-responsive { flex-direction: column; }
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .container { width: 92%; }
+
+}
