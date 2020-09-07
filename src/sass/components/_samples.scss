@@ -8,6 +8,13 @@
     height: 60px;
     border: 1px solid var(--gray);
     b { padding: $paddingNormal; }
+
+    @media screen and (max-width: 768px) {
+        b {
+            font-size: $fontMini;
+        }
+    }
+
 }
 
 .sample1 {
@@ -64,6 +71,9 @@
         width: 50%;
         min-height: 30px;
         background-color: lightpink;
+    }
+    @media screen and (max-width: 768px) {
+        b { padding: 0.5rem; }
     }
 }
 

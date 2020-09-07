@@ -1,6 +1,0 @@
-# Redireccionamiento 301 a WWW
-
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTP_HOST} ^css.trejocode.com [NC]
-    RewriteRule (.*) https://trejocode.github.io/css//$1 [R=301,L,QSA]
-</IfModule>

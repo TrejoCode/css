@@ -62,65 +62,19 @@
         ]
     },
     {
-        "isMultiple": true,
+        "isMultiple": false,
         "title": "🔛 Justificación",
-        "anchor": "#justificacion",
-        "sublevels": [
-            {
-                "title": ".justify-start",
-                "anchor": "#"
-            },
-            {
-                "title": ".justify-center",
-                "anchor": "#"
-            },
-            {
-                "title": ".justify-end",
-                "anchor": "#"
-            },
-            {
-                "title": ".justify-justify",
-                "anchor": "#"
-            },
-            {
-                "title": ".justify-around",
-                "anchor": "#"
-            }
-        ]
+        "anchor": "#justificacion"
     },
     {
-        "isMultiple": true,
+        "isMultiple": false,
         "title": "🔝 Alineación",
-        "anchor": "#alineacion",
-        "sublevels": [
-            {
-                "title": ".align-start",
-                "anchor": "#"
-            },
-            {
-                "title": ".align-center",
-                "anchor": "#"
-            },
-            {
-                "title": ".align-end",
-                "anchor": "#"
-            }
-        ]
+        "anchor": "#alineacion"
     },
     {
-        "isMultiple": true,
+        "isMultiple": false,
         "title": "🔣 Agrupación",
-        "anchor": "#agrupacion",
-        "sublevels": [
-            {
-                "title": ".wrap",
-                "anchor": "#"
-            },
-            {
-                "title": ".nowrap",
-                "anchor": "#"
-            }
-        ]
+        "anchor": "#agrupacion"
     },
     {
         "isMultiple": false,
@@ -128,46 +82,14 @@
         "anchor": "#espacios"
     },
     {
-        "isMultiple": true,
+        "isMultiple": false,
         "title": "🖼️ Imágenes",
-        "anchor": "#imagenes",
-        "sublevels": [
-            {
-                "title": ".responsive-img",
-                "anchor": "#"
-            },
-            {
-                "title": ".cover-img",
-                "anchor": "#"
-            },
-            {
-                "title": ".contain-img",
-                "anchor": "#"
-            }
-        ]
+        "anchor": "#imagenes"
     },
     {
-        "isMultiple": true,
+        "isMultiple": false,
         "title": "📝 Decoradores de texto",
-        "anchor": "#decoradores",
-        "sublevels": [
-            {
-                "title": ".text-left",
-                "anchor": "#"
-            },
-            {
-                "title": ".text-center",
-                "anchor": "#"
-            },
-            {
-                "title": ".text-right",
-                "anchor": "#"
-            },
-            {
-                "title": ".text-justify",
-                "anchor": "#"
-            }
-        ]
+        "anchor": "#decoradores"
     },
     {
         "isMultiple": false,

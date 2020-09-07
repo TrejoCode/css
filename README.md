@@ -1,9 +1,9 @@
 
-![Trejocode Logo](https://www.trejocode.com/app/img/logo.png "trejocode Logo")
+![Trejocode](https://res.cloudinary.com/trejocode/image/upload/v1586298449/Trejocode/logo_t0otlj.png)
 
 ![](https://img.shields.io/github/stars/trejocode/css) ![](https://img.shields.io/github/forks/trejocode/css) ![](https://img.shields.io/github/tag/trejocode/css) ![](https://img.shields.io/github/issues/trejocode/css)
 
-# core.css
+# 🎨 core.css
 
 #### **Hoja de estilos basada en flexbox para maquetar estructuras flexibles**
 
@@ -12,7 +12,7 @@ Maquetando con *flexbox* las hojas de estilos se tornan extensas, el *parent* aq
 **core.css** define todas las propiedades flexibles necesarias en un único archivo de *css* o *sass*, todas las propiedades son hackeables, pudes modificar la hoja de estilos a tu preferencia, core.css es libre y siempre lo será.
 
 
-## Documentación:
+## 📄 Documentación:
 
 [https://css.trejocode.com/](https://css.trejocode.com/)
 
@@ -20,13 +20,23 @@ Maquetando con *flexbox* las hojas de estilos se tornan extensas, el *parent* aq
 ### Descargar:
 
 * CSS:  Localizar en el repositorio: **css/core.css**
-* SASS: Localizar en el repositorio: **sass/core.css**
+* SASS: Localizar en el repositorio: **sass/core.scss**
 
 ### Integrar:
 ```HTML
 <link rel="stylesheet" href="core.css" media="screen" />
 ```
-### Documentación:
+
+Para JS:
+
+```js
+import '../sass/core.scss';
+```
+
+### 📦 Construido con:
+* [Next.js](https://nextjs.org)
+
+## 📄 Documentación:
 
 [https://css.trejocode.com/](https://css.trejocode.com/)
 
