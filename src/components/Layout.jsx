@@ -33,7 +33,7 @@ const Layout = ({ title, description, keywords, children }) => {
                 {/* --- Open Graph --- */}
                 <meta property = "og:type"    content = "website" />
                 <meta property = "og:url"     content = "https://www.trejocode.com/" />
-                <meta property = "og:image"   content = "https://res.cloudinary.com/trejocode/image/upload/v1585867983/Trejocode/og_ccf7n6.jpg" />
+                <meta property = "og:image"   content = "https://res.cloudinary.com/trejocode/image/upload/v1599595751/Trejocode/corecss-min_m9v9tf.jpg" />
                 <meta property = "og:title"   content = { title ? title : "Core CSS" } />
                 <meta property = "og:description" content = { description ? description : "Hoja de estilos basada en flexbox para maquetar estructuras flexibles" } />
                 {/* -- IOS Meta -- */}
@@ -47,7 +47,7 @@ const Layout = ({ title, description, keywords, children }) => {
                 <meta name = "twitter:card"           content = "summary" />
                 <meta name = "twitter:url"            content = "https://www.trejocode.com" />
                 <meta name = "twitter:title"          content = { title ? title : "Core CSS" } />
-                <meta name = "twitter:image"          content = "https://res.cloudinary.com/trejocode/image/upload/v1585867983/Trejocode/og_ccf7n6.jpg" />
+                <meta name = "twitter:image"          content = "https://res.cloudinary.com/trejocode/image/upload/v1599595751/Trejocode/corecss-min_m9v9tf.jpg" />
                 <meta name = "twitter:description"    content = { description ? description : "Hoja de estilos basada en flexbox para maquetar estructuras flexibles" } />
             </Head>
             <Header />
