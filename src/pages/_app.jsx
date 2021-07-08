@@ -1,37 +1,36 @@
 /**
- * @version 1.0.0
+ * @version 1.0.1
  * @author Trejocode - Sergio
- * @description Custom App para cargar SASS y GA
-*/
+ * @description Custom App para cargar SASS y Google Analytics
+ */
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import MDXProvider   from '../components/MDX/MDXProvider';
-import * as ga       from '../helpers/ga';
-import '../sass/style.scss';    
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import MDXProvider from "components/MDX/MDXProvider";
+import * as gtag from "libs/ga";
+import "sass/style.scss";
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter();
 
-    const router = useRouter();
+  /**
+   * @description Escuchar los eventos del Router para inicializar GA
+   */
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
-    /**
-     * @description Escuchar los eventos del Router para inicializar GA
-    */
-    useEffect(() => {
-
-        router.events.on('routeChangeComplete', (url) => {
-            ga.pageview(url);
-        });
-        
-
-    }, []);
-
-    return(
-        <MDXProvider>
-            <Component { ...pageProps } />
-        </MDXProvider>
-    );
-
+  return (
+    <MDXProvider>
+      <Component {...pageProps} />
+    </MDXProvider>
+  );
 };
-    
+
 export default App;

@@ -1,604 +1,547 @@
-import WhiteSpace   from '../components/spacers';
-import { Heading2 } from '../components/headings';
+import WhiteSpace from "components/spacers";
+import { Heading2 } from "components/headings";
 
 # Core.css
 
-<WhiteSpace size = "64" />
+<WhiteSpace size="64" />
 
-<Heading2 content = "📌 Introducción" anchor = "introduccion" />
+<Heading2 content="📌 Introducción" anchor="introduccion" />
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 **Hoja de estilos basada en flexbox para maquetar estructuras flexibles**
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-Maquetando con *flexbox* las hojas de estilos se tornan extensas, el *parent* aquiere propiedades fle, y los *child* de los *child* también requieren propiedades flex, esto ocasiona redundancia del código, sumado al hecho de que resulta complicado de entender.
+Maquetando con _flexbox_ las hojas de estilos se tornan extensas, el _parent_ aquiere propiedades fle, y los _child_ de los _child_ también requieren propiedades flex, esto ocasiona redundancia del código, sumado al hecho de que resulta complicado de entender.
 
-<WhiteSpace size = "8" />
+<WhiteSpace size="8" />
 
-**core.css** define todas las propiedades flexibles necesarias en un único archivo de *css* o *sass*, todas las propiedades son hackeables, pudes modificar la hoja de estilos a tu preferencia, core.css es libre y siempre lo será.
+**core.css** define todas las propiedades flexibles necesarias en un único archivo de _css_ o _sass_, todas las propiedades son hackeables, pudes modificar la hoja de estilos a tu preferencia, core.css es libre y siempre lo será.
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "Implementación" anchor = "implementacion" />
+<Heading2 content="Implementación" anchor="implementacion" />
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### CSS
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Localizar en el repositorio: **css/core.css**
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <link rel="stylesheet" href="core.css" media="screen" />
 ```
 
-<WhiteSpace size = "24" />
+<WhiteSpace size="24" />
 
 ### SASS
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Localizar en el repositorio: **sass/core.scss**
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```js
-import '../sass/core.scss';
+import "../sass/core.scss";
 ```
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "✔️ Básicos" anchor = "basicos" />
+<Heading2 content="✔️ Básicos" anchor="basicos" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-Aplicar **core.css** es realmente sencillo el contenedor padre deberá contar con la clase ***.flex***, a partir de ellos los siguientes clases podrán aplicarse.
+Aplicar **core.css** es realmente sencillo el contenedor padre deberá contar con la clase **_.flex_**, a partir de ellos los siguientes clases podrán aplicarse.
 
-<WhiteSpace size = "8" />
+<WhiteSpace size="8" />
 
 **Importante:** No afecta al comportamiento de otras hojas de estilos.
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .flex
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <html>
-    <head> <!-- Contenido --> </head>
-    <body>
-        <div class="flex">
-            <!-- Listo, puedes utilizar cualquier clase de core.css -->
-        </div>
-    </body>
+  <head>
+    <!-- Contenido -->
+  </head>
+  <body>
+    <div class="flex">
+      <!-- Listo, puedes utilizar cualquier clase de core.css -->
+    </div>
+  </body>
 </html>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .container
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 El contenedor es un componente cuya función es cubrir el **90%** del ancho de pantalla o un máximo de **1440px** y en móviles < 576px ocupará el **92%** del ancho de la pantalla.
 
-<WhiteSpace size = "8" />
+<WhiteSpace size="8" />
 
 Por lo general todas las librerías utilizan un contenedor, su función es agrupar elementos en determinado espacio con el fin de asegurar un área segura que garantize que todos los elementos dentro de un contenedor no sean desproporcionales entre las diferentes resoluciones de dispositivos.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
-    <div class="flex">
-        <div class="container">
-        </div>
-    </div>
+<div class="flex">
+  <div class="container"></div>
+</div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample1">
-    <div className = "container">
-        <b>
-            Azul = Contenedor
-        </b>
-    </div>
+<div className="sample flex sample1">
+  <div className="container">
+    <b>Azul = Contenedor</b>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .full
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-Los elementos con la clase *.full* obtendrán el 100% del ancho de la pantalla o con base a su contenedor.
+Los elementos con la clase _.full_ obtendrán el 100% del ancho de la pantalla o con base a su contenedor.
 
-<WhiteSpace size = "16" />
-
-```html
-    <div class="flex">
-        <div class="full">
-            <p>Soy un texto con un ancho completo</p>
-        </div>
-    </div>
-```
-
-<WhiteSpace size = "32" />
-
-<div className = "sample flex sample2">
-    <div className = "full">
-        <b>
-            Soy un texto con un ancho completo
-        </b>
-    </div>
-</div>
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
-    <div class="flex">
-        <div class="container">
-            <div class="full">
-                <p>Soy un texto con un ancho completo respecto al contenedor</p>
-            </div>
-        <div>
-    </div>
+<div class="flex">
+  <div class="full">
+    <p>Soy un texto con un ancho completo</p>
+  </div>
+</div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample3">
-    <div className="container">
-        <div className = "full">
-            <b>
-                Soy un texto con un ancho completo respecto al contenedor
-            </b>
-        </div>
-    </div>
+<div className="sample flex sample2">
+  <div className="full">
+    <b>Soy un texto con un ancho completo</b>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="16" />
+
+```html
+<div class="flex">
+  <div class="container">
+    <div class="full">
+      <p>Soy un texto con un ancho completo respecto al contenedor</p>
+    </div>
+    <div></div>
+  </div>
+</div>
+```
+
+<WhiteSpace size="32" />
+
+<div className="sample flex sample3">
+  <div className="container">
+    <div className="full">
+      <b>Soy un texto con un ancho completo respecto al contenedor</b>
+    </div>
+  </div>
+</div>
+
+<WhiteSpace size="32" />
 
 ### .auto
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Establece que un elemento solo ocupe el ancho necesario, esta medición se basa en el contenido iterno del elemento.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
-    <div class="flex">
-        <div class="auto">
-            <p>Soy una p con ancho automático</p>
-        </div>
-    </div>
+<div class="flex">
+  <div class="auto">
+    <p>Soy una p con ancho automático</p>
+  </div>
+</div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample4">
-    <div className="auto">
-        <b>
-            Soy una p con ancho automático
-        </b>
-    </div>
+<div className="sample flex sample4">
+  <div className="auto">
+    <b>Soy una p con ancho automático</b>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🔃 Dirección de los elementos" anchor = "direccion" />
+<Heading2 content="🔃 Dirección de los elementos" anchor="direccion" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes, el eje principal y el eje cruzado (X, Y). **Filas y columnas**.
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .row
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Establece que todos los elementos se acoplen en fila (en dirección X)
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row"> 
-        <div> Azul = Elemento 1 </div>
-        <div> Rojo = Elemento 2 </div>
-    </div>
+  <div class="row">
+    <div>Azul = Elemento 1</div>
+    <div>Rojo = Elemento 2</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample5">
-    <div className="row">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
+<div className="sample flex sample5">
+  <div className="row">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .column
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Establece que todos los elementos se acoplen en columna (en dirección Y)
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="column">
-        <div> Azul = Elemento 1 </div>
-        <div> Rojo = Elemento 2 </div>
-    </div>
+  <div class="column">
+    <div>Azul = Elemento 1</div>
+    <div>Rojo = Elemento 2</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample6">
-    <div className="column">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
+<div className="sample flex sample6">
+  <div className="column">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .row-responsive
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Establece la dirección de los elementos en escritorio, laptops y televisores en fila (x) y si la resolución sea mayor a **768px**, pero cambiará la dirección a columna (Y) en tabletas y móviles cuya resolución es menor a **768px**
 
-<WhiteSpace size = "8" />
+<WhiteSpace size="8" />
 
 Redimensiona el tamaño del navegador para que puedas notar el comportamiento.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row-responsive">
-        <div> Azul = Elemento 1 </div>
-        <div> Rojo = Elemento 2 </div>
-    </div>
+  <div class="row-responsive">
+    <div>Azul = Elemento 1</div>
+    <div>Rojo = Elemento 2</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample6">
-    <div className="row-responsive">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
+<div className="sample flex sample6">
+  <div className="row-responsive">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🔛 Justificación" anchor = "justificacion" />
+<Heading2 content="🔛 Justificación" anchor="justificacion" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Una característica clave de flexbox es la capacidad de justificar ítems sobre el eje principal (X)
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .justify-start
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica todos los elementos en el plano x (fila, row) al inicio. Esta es una propiedad por defecto de todos los elementos flex.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row justify-start">
-        <div> Elemento justificado a la izquierda(Inicio) </div>
-    </div>
+  <div class="row justify-start">
+    <div>Elemento justificado a la izquierda(Inicio)</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row justify-start">
-        <div className="element1">
-            <b>
-                Elemento justificado a la izquierda(Inicio)
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row justify-start">
+    <div className="element1">
+      <b>Elemento justificado a la izquierda(Inicio)</b>
     </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .justify-center
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica todos los elementos en el plano x (fila, row) al centro.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row full justify-center">
-        <div> Elemento al centro </div>
-    </div>
+  <div class="row full justify-center">
+    <div>Elemento al centro</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full justify-center">
-        <div className="element1">
-            <b>
-                Elemento al centro
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full justify-center">
+    <div className="element1">
+      <b>Elemento al centro</b>
     </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .justify-end
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica todos los elementos en el plano x (fila, row) al final.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row full justify-end">
-        <div> Elemento al final </div>
-    </div>
+  <div class="row full justify-end">
+    <div>Elemento al final</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full justify-end">
-        <div className="element1">
-            <b>
-                Elemento al final
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full justify-end">
+    <div className="element1">
+      <b>Elemento al final</b>
     </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .justify-between
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica el contenido distribuyendo todos los elementos uniformemente en el plano x (fila, row) , el primer elemento al inicio y el último al final.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row justify-between">
-        <div> Elemento 1</div>
-        <div> Elemento 2</div>
-        <div> Elemento 3</div>
-    </div>
+  <div class="row justify-between">
+    <div>Elemento 1</div>
+    <div>Elemento 2</div>
+    <div>Elemento 3</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full justify-between">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full justify-between">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .justify-around
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica el contenido distribuyendo todos los elementos uniformemente en el plano x (fila, row) , los elementos tienen el mismo espacio a su alrededor.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row justify-around">
-        <div> Elemento 1</div>
-        <div> Elemento 2</div>
-        <div> Elemento 3</div>
-    </div>
+  <div class="row justify-around">
+    <div>Elemento 1</div>
+    <div>Elemento 2</div>
+    <div>Elemento 3</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full justify-around">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full justify-around">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🔝 Alineación" anchor = "alineacion" />
+<Heading2 content="🔝 Alineación" anchor="alineacion" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Una característica clave de flexbox es la capacidad de alinear ítems sobre el eje secundario (Y)
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .align-start
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea todos los elementos en el plano y (columna, column) al inicio, cuando se encuentran en fila. Esta es una propiedad por defecto de todos los elementos.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row align-start">
-        <div> Elemento alineado al inicio </div>
-    </div>
+  <div class="row align-start">
+    <div>Elemento alineado al inicio</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full align-start">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full align-start">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .align-center
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea todos los elementos en el plano y (column) al centro, cuando se encuentran en fila.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="row align-center">
-        <div> Elemento alineado al centro </div>
-    </div>
+  <div class="row align-center">
+    <div>Elemento alineado al centro</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full align-center">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full align-center">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .align-end
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea todos los elementos en el plano y (column) al final, cuando se encuentran en fila.
 
-
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
@@ -608,376 +551,392 @@ Alinea todos los elementos en el plano y (column) al final, cuando se encuentran
 </div
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample7">
-    <div className="row full align-end">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample7">
+  <div className="row full align-end">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🔣 Agrupación" anchor = "agrupacion" />
+<Heading2 content="🔣 Agrupación" anchor="agrupacion" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Define si los elementos flexibles se fuerzan en una sola línea o pueden fluir en varias líneas.
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .wrap
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Fuerza a los elementos a distribuirse en multiples líneas.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="full wrap">
-        <div> Elemento1 </div>
-        <div> Elemento2 </div>
-        <div> Elemento3 </div>
-        <div> Elemento4 </div>
-    </div>
+  <div class="full wrap">
+    <div>Elemento1</div>
+    <div>Elemento2</div>
+    <div>Elemento3</div>
+    <div>Elemento4</div>
+  </div>
 </div>
 ```
-<WhiteSpace size = "32" />
 
-<div className = "sample flex sample8">
-    <div className="row full wrap">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
-        <div className="element4">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<WhiteSpace size="32" />
+
+<div className="sample flex sample8">
+  <div className="row full wrap">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+    <div className="element4">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .nowrap
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Fuerza a los elementos a distribuirse en una única línea.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="full nowrap">
-        <div> Elemento1 </div>
-        <div> Elemento2 </div>
-        <div> Elemento3 </div>
-        <div> Elemento4 </div>
-    </div>
+  <div class="full nowrap">
+    <div>Elemento1</div>
+    <div>Elemento2</div>
+    <div>Elemento3</div>
+    <div>Elemento4</div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample8">
-    <div className="row full nowrap">
-        <div className="element1">
-            <b>
-                Elemento 1
-            </b>
-        </div>
-        <div className="element2">
-            <b>
-                Elemento 2
-            </b>
-        </div>
-        <div className="element3">
-            <b>
-                Elemento 3
-            </b>
-        </div>
-        <div className="element4">
-            <b>
-                Elemento 3
-            </b>
-        </div>
+<div className="sample flex sample8">
+  <div className="row full nowrap">
+    <div className="element1">
+      <b>Elemento 1</b>
     </div>
+    <div className="element2">
+      <b>Elemento 2</b>
+    </div>
+    <div className="element3">
+      <b>Elemento 3</b>
+    </div>
+    <div className="element4">
+      <b>Elemento 3</b>
+    </div>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "⏸️ Espacios en blanco" anchor = "espacios" />
+<Heading2 content="⏸️ Espacios en blanco" anchor="espacios" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-Los espacios en blanco aplican unicamente a las columnas. No deben existir código dentro una etiqueta de con **.white-space-***
+Los espacios en blanco aplican unicamente a las columnas. No deben existir código dentro una etiqueta de con **.white-space-\***
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="column full">
-        <div class="white-space-4"></div>
-        <div class="white-space-8"></div>
-        <div class="white-space-16"></div>
-        <div class="white-space-24"></div>
-        <div class="white-space-32"></div>
-        <div class="white-space-48"></div>
-        <div class="white-space-64"></div>
-    </div>
+  <div class="column full">
+    <div class="white-space-4"></div>
+    <div class="white-space-8"></div>
+    <div class="white-space-16"></div>
+    <div class="white-space-24"></div>
+    <div class="white-space-32"></div>
+    <div class="white-space-48"></div>
+    <div class="white-space-64"></div>
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample9">
-    <div className="column full">
-        <div className="spacer"></div>
-        <div className="white-space-4"></div>
-        <div className="spacer"></div>
-        <div className="white-space-8"></div>
-        <div className="spacer"></div>
-        <div className="white-space-16"></div>
-        <div className="spacer"></div>
-        <div className="white-space-24"></div>
-        <div className="spacer"></div>
-        <div className="white-space-32"></div>
-        <div className="spacer"></div>
-        <div className="white-space-48"></div>
-        <div className="spacer"></div>
-        <div className="white-space-64"></div>
-        <div className="spacer"></div>
-    </div>
+<div className="sample flex sample9">
+  <div className="column full">
+    <div className="spacer"></div>
+    <div className="white-space-4"></div>
+    <div className="spacer"></div>
+    <div className="white-space-8"></div>
+    <div className="spacer"></div>
+    <div className="white-space-16"></div>
+    <div className="spacer"></div>
+    <div className="white-space-24"></div>
+    <div className="spacer"></div>
+    <div className="white-space-32"></div>
+    <div className="spacer"></div>
+    <div className="white-space-48"></div>
+    <div className="spacer"></div>
+    <div className="white-space-64"></div>
+    <div className="spacer"></div>
+  </div>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🖼️ Imágenes" anchor = "imagenes" />
+<Heading2 content="🖼️ Imágenes" anchor="imagenes" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 La etiqueta de imagen **img** por defecto ocupará el 100% de anchura(max-width:100%) de su contenedor, la altura es proporcional al tamaño de la imagen(height:auto)
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ```html
 <div class="flex">
-    <img src="https://goo.gl/SWuhMU" alt = "Alternative text" />
+  <img src="https://goo.gl/SWuhMU" alt="Alternative text" />
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .responsive-img
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-Habilita la capacidad de adaptar la imagen de manera proporcional automáticamente, **solo aplicable al contendedor de la imagen**. *Redimensiona la ventana para notar el comportamiento*.
+Habilita la capacidad de adaptar la imagen de manera proporcional automáticamente, **solo aplicable al contendedor de la imagen**. _Redimensiona la ventana para notar el comportamiento_.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <div class="responsive-img">
-        <img src="https://goo.gl/SWuhMU" alt = "Texto alternativo" />
-    </div>
+  <div class="responsive-img">
+    <img src="https://goo.gl/SWuhMU" alt="Texto alternativo" />
+  </div>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <div className="responsive-img">
-        <img src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1" alt = "Texto alternativo" />
-    </div>
+<div className="sample flex sample10">
+  <div className="responsive-img">
+    <img
+      src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1"
+      alt="Texto alternativo"
+    />
+  </div>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .cover-img
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-La imagen mantiene su relación de aspecto mientras llena todo el cuadro de contenido del elemento. El objeto será recortado. Solo aplicable a la etiqueta de imagen sin *.responsive-img* como contenedor . Redimensiona la ventana para notar el comportamiento.
+La imagen mantiene su relación de aspecto mientras llena todo el cuadro de contenido del elemento. El objeto será recortado. Solo aplicable a la etiqueta de imagen sin _.responsive-img_ como contenedor . Redimensiona la ventana para notar el comportamiento.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <img class="cover-img" src="https://goo.gl/SWuhMU" alt = "Texto alternativo" />
+  <img class="cover-img" src="https://goo.gl/SWuhMU" alt="Texto alternativo" />
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <img className="cover-img" src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1" alt = "Texto alternativo" />
+<div className="sample flex sample10">
+  <img
+    className="cover-img"
+    src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1"
+    alt="Texto alternativo"
+  />
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .contain-img
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
-La imagen se escala para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento Solo aplicable a la etiqueta de imagen sin *.responsive-img* como contenedor. Redimensiona la ventana para notar el comportamiento.
+La imagen se escala para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento Solo aplicable a la etiqueta de imagen sin _.responsive-img_ como contenedor. Redimensiona la ventana para notar el comportamiento.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div class="flex">
-    <img class="contain-img" src="https://goo.gl/SWuhMU" alt = "Texto alternativo" />
+  <img
+    class="contain-img"
+    src="https://goo.gl/SWuhMU"
+    alt="Texto alternativo"
+  />
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <img className="contain-img" src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1" alt = "Texto alternativo" />
+<div className="sample flex sample10">
+  <img
+    className="contain-img"
+    src="https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1"
+    alt="Texto alternativo"
+  />
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "📝 Decoradores de texto" anchor = "decoradores" />
+<Heading2 content="📝 Decoradores de texto" anchor="decoradores" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Los siguientes elementos no son obligatorios, son una colección de utilidades para textos.
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .text-left
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea el texto a la izquierda, esta es una propieda por defecto.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div>
-    <p class="text-left"> Texto largo en idioma desconocido</p> 
+  <p class="text-left">Texto largo en idioma desconocido</p>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <p className="text-left">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam ullam.
-    </p>
+<div className="sample flex sample10">
+  <p className="text-left">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur
+    aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione
+    praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos
+    unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+    expedita provident enim ea recusandae, ducimus perferendis beatae assumenda
+    sequi explicabo aliquid facilis itaque molestiae? Sit incidunt harum error
+    facilis et! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Inventore laudantium dolorem a nesciunt? Nulla velit nisi deserunt quaerat
+    soluta ipsa dolor minus non cum, reiciendis sapiente excepturi unde ipsam
+    ullam.
+  </p>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .text-center
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea el texto al centro.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div>
-    <p class="text-center"> Texto largo en idioma desconocido</p> 
+  <p class="text-center">Texto largo en idioma desconocido</p>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <p className="text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    </p>
+<div className="sample flex sample10">
+  <p className="text-center">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur
+    aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione
+    praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos
+    unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  </p>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .text-right
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Alinea el texto a la derecha.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div>
-    <p class="text-right"> Texto largo en idioma desconocido</p> 
+  <p class="text-right">Texto largo en idioma desconocido</p>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <p className="text-right">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae?
-    </p>
+<div className="sample flex sample10">
+  <p className="text-right">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur
+    aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione
+    praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos
+    unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+    expedita provident enim ea recusandae, ducimus perferendis beatae assumenda
+    sequi explicabo aliquid facilis itaque molestiae?
+  </p>
 </div>
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 ### .text-justify
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Justifica el texto.
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 ```html
 <div>
-    <p class="text-justify"> Texto largo en idioma desconocido</p> 
+  <p class="text-justify">Texto largo en idioma desconocido</p>
 </div>
 ```
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
-<div className = "sample flex sample10">
-    <p className="text-justify">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita provident enim ea recusandae, ducimus perferendis beatae assumenda sequi explicabo aliquid facilis itaque molestiae?
-    </p>
+<div className="sample flex sample10">
+  <p className="text-justify">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur
+    aut autem at cumque facilis. Animi veritatis maiores, officia eius ratione
+    praesentium eum? Amet consectetur eveniet quibusdam expedita dignissimos
+    unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+    expedita provident enim ea recusandae, ducimus perferendis beatae assumenda
+    sequi explicabo aliquid facilis itaque molestiae?
+  </p>
 </div>
 
-<WhiteSpace size = "48" />
+<WhiteSpace size="48" />
 
-<Heading2 content = "🏷️ Referencias" anchor = "referencias" />
+<Heading2 content="🏷️ Referencias" anchor="referencias" />
 
-<WhiteSpace size = "16" />
+<WhiteSpace size="16" />
 
 Lista de sitios Web quienes utilizan core.css
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />
 
 1. [Trejocode](https://www.trejocode.com/ "trejocode")
 2. [Best Line Cancun](https://www.bestlinecancun.com/ "Best Line Cancún")
@@ -992,6 +951,10 @@ Lista de sitios Web quienes utilizan core.css
 11. [CRM Altura](https://crm.alturacancun.com/ "Altura Cancún CRM")
 12. [Absolem Marketing](https://www.absolemarketing.com.mx/ "Absolem Marketing")
 13. [Land Savvy](https://www.land-savvy.com/promotions/ "Land Savvy")
-13. [Universidad Politécnica de Quintana Roo](http://upqroo.edu.mx/ "UPQROO")
+14. [Universidad Politécnica de Quintana Roo](http://new.upqroo.edu.mx/ "UPQROO")
+15. [Arte y Creaciones de México](https://artcdemexico.com "ArtC de México")
+16. [Jako](https://jako.mx "Jako")
+17. [MCHomes](https://mchomes.mx "MCH")
+18. [Sietemares](https://www.sietemares.com.mx "Sietemares")
 
-<WhiteSpace size = "32" />
+<WhiteSpace size="32" />

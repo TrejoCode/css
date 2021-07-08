@@ -1,28 +1,24 @@
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author Trejocode - Sergio
  * @description Provedor de características de MDX
-*/
+ */
 
-import React from 'react';
-import { MDXProvider } from '@mdx-js/react';
-import CodeBlock from '../MDX/CodeBlock';
+import { MDXProvider } from "@mdx-js/react";
+import CodeBlock from "components/MDX/CodeBlock";
+
+const components = {
+  // eslint-disable-next-line react/display-name
+  pre: (props) => <div {...props} />,
+  code: CodeBlock,
+};
 
 const Provider = ({ children }) => {
-
-    const components = {
-        pre: props => <div {...props} />,
-        code: CodeBlock
-    };
-
-    return(
-        <MDXProvider components={components}>
-            <main>
-                { children }
-            </main>
-        </MDXProvider>
-    );
-
+  return (
+    <MDXProvider components={components}>
+      <main>{children}</main>
+    </MDXProvider>
+  );
 };
 
 export default Provider;

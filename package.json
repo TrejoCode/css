@@ -4,18 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.0.4",
-    "next": "10.0.4",
-    "next-pwa": "^5.0.2",
-    "node-sass": "^4.14.1",
-    "prism-react-renderer": "^1.1.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-icons": "^4.1.0"
+    "@next/mdx": "^11.0.1",
+    "next": "11.0.1",
+    "prism-react-renderer": "^1.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
   }
 }

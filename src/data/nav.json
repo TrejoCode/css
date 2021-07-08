@@ -1,99 +1,99 @@
 [
-    {
-        "isMultiple": false,
-        "title": "📌 Introducción",
-        "anchor": "#introduccion"
-    },
-    {
-        "isMultiple": true,
-        "title": "📝 Implementación",
-        "anchor": "#implementacion",
-        "sublevels": [
-            {
-                "title": "CSS",
-                "anchor": "#"
-            },
-            {
-                "title": "SASS",
-                "anchor": "#"
-            }
-        ]
-    }, 
-    {
-        "isMultiple": true,
-        "title": "✔️ Básicos",
-        "anchor": "#basicos",
-        "sublevels": [
-            {
-                "title": ".flex",
-                "anchor": "#"
-            },
-            {
-                "title": ".container",
-                "anchor": "#"
-            },
-            {
-                "title": ".full",
-                "anchor": "#"
-            },
-            {
-                "title": ".auto",
-                "anchor": "#"
-            }
-        ]
-    },
-    {
-        "isMultiple": true,
-        "title": "🔃 Dirección",
-        "anchor": "#direccion",
-        "sublevels": [
-            {
-                "title": ".row",
-                "anchor": "#"
-            },
-            {
-                "title": ".column",
-                "anchor": "#"
-            },
-            {
-                "title": ".row-reponsive",
-                "anchor": "#"
-            }
-        ]
-    },
-    {
-        "isMultiple": false,
-        "title": "🔛 Justificación",
-        "anchor": "#justificacion"
-    },
-    {
-        "isMultiple": false,
-        "title": "🔝 Alineación",
-        "anchor": "#alineacion"
-    },
-    {
-        "isMultiple": false,
-        "title": "🔣 Agrupación",
-        "anchor": "#agrupacion"
-    },
-    {
-        "isMultiple": false,
-        "title": "⏸️ Espacio en blanco",
-        "anchor": "#espacios"
-    },
-    {
-        "isMultiple": false,
-        "title": "🖼️ Imágenes",
-        "anchor": "#imagenes"
-    },
-    {
-        "isMultiple": false,
-        "title": "📝 Decoradores de texto",
-        "anchor": "#decoradores"
-    },
-    {
-        "isMultiple": false,
-        "title": "🏷️ Referencias",
-        "anchor": "#referencias"
-    }
+  {
+    "isMultiple": false,
+    "title": "📌 Introducción",
+    "anchor": "#introduccion"
+  },
+  {
+    "isMultiple": true,
+    "title": "📝 Implementación",
+    "anchor": "#implementacion",
+    "sublevels": [
+      {
+        "title": "CSS",
+        "anchor": "#"
+      },
+      {
+        "title": "SASS",
+        "anchor": "#"
+      }
+    ]
+  },
+  {
+    "isMultiple": true,
+    "title": "✔️ Básicos",
+    "anchor": "#basicos",
+    "sublevels": [
+      {
+        "title": ".flex",
+        "anchor": "#"
+      },
+      {
+        "title": ".container",
+        "anchor": "#"
+      },
+      {
+        "title": ".full",
+        "anchor": "#"
+      },
+      {
+        "title": ".auto",
+        "anchor": "#"
+      }
+    ]
+  },
+  {
+    "isMultiple": true,
+    "title": "🔃 Dirección",
+    "anchor": "#direccion",
+    "sublevels": [
+      {
+        "title": ".row",
+        "anchor": "#"
+      },
+      {
+        "title": ".column",
+        "anchor": "#"
+      },
+      {
+        "title": ".row-reponsive",
+        "anchor": "#"
+      }
+    ]
+  },
+  {
+    "isMultiple": false,
+    "title": "🔛 Justificación",
+    "anchor": "#justificacion"
+  },
+  {
+    "isMultiple": false,
+    "title": "🔝 Alineación",
+    "anchor": "#alineacion"
+  },
+  {
+    "isMultiple": false,
+    "title": "🔣 Agrupación",
+    "anchor": "#agrupacion"
+  },
+  {
+    "isMultiple": false,
+    "title": "⏸️ Espacio en blanco",
+    "anchor": "#espacios"
+  },
+  {
+    "isMultiple": false,
+    "title": "🖼️ Imágenes",
+    "anchor": "#imagenes"
+  },
+  {
+    "isMultiple": false,
+    "title": "📝 Decoradores de texto",
+    "anchor": "#decoradores"
+  },
+  {
+    "isMultiple": false,
+    "title": "🏷️ Referencias",
+    "anchor": "#referencias"
+  }
 ]
