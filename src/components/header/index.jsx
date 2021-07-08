@@ -5,9 +5,7 @@
  */
 
 import Link from "next/link";
-import Image from "next/image";
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai";
-import Logo from "../../../public/img/logo.png";
 
 const Header = () => {
   return (
@@ -17,7 +15,11 @@ const Header = () => {
           <div className="logo">
             <Link href="/">
               <a aria-label="Trejocode Logo Inicio" role="img">
-                <Image src={Logo} alt="Trejocode logo" title="Trejocode logo" />
+                <img
+                  src="/img/logo.png"
+                  alt="Trejocode logo"
+                  title="Trejocode logo"
+                />
               </a>
             </Link>
           </div>
