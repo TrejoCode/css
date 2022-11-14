@@ -4,10 +4,32 @@
  * @description Configuraciones adicionales para Next.js
  */
 
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
+// Funciones de reescritura compatibles con splitbee analytics
+const rewrites = async () => [
+  {
+    source: "/bee.js",
+    destination: "https://cdn.splitbee.io/sb.js",
+  },
+  {
+    source: "/_hive/:slug",
+    destination: "https://hive.splitbee.io/:slug",
+  },
+];
 
-module.exports = withMDX({
+const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx"],
-});
+  rewrites,
+};
+
+const mdxConfig = {
+  extension: /.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+    providerImportSource: "@mdx-js/react",
+  },
+};
+
+const withMDX = require("@next/mdx")(mdxConfig);
+
+module.exports = withMDX({ ...nextConfig });
