@@ -11,11 +11,11 @@
     "sublevels": [
       {
         "title": "CSS",
-        "anchor": "#"
+        "anchor": "#css"
       },
       {
         "title": "SASS",
-        "anchor": "#"
+        "anchor": "#sass"
       }
     ]
   },
@@ -26,19 +26,19 @@
     "sublevels": [
       {
         "title": ".flex",
-        "anchor": "#"
+        "anchor": "#flex"
       },
       {
         "title": ".container",
-        "anchor": "#"
+        "anchor": "#container"
       },
       {
         "title": ".full",
-        "anchor": "#"
+        "anchor": "#full"
       },
       {
         "title": ".auto",
-        "anchor": "#"
+        "anchor": "#auto"
       }
     ]
   },
@@ -49,32 +49,78 @@
     "sublevels": [
       {
         "title": ".row",
-        "anchor": "#"
+        "anchor": "#row"
       },
       {
         "title": ".column",
-        "anchor": "#"
+        "anchor": "#column"
       },
       {
         "title": ".row-reponsive",
-        "anchor": "#"
+        "anchor": "#row-reponsive"
       }
     ]
   },
   {
-    "isMultiple": false,
+    "isMultiple": true,
     "title": "🔛 Justificación",
-    "anchor": "#justificacion"
+    "anchor": "#justificacion",
+    "sublevels": [
+      {
+        "title": ".justify-start",
+        "anchor": "#justify-start"
+      },
+      {
+        "title": ".justify-center",
+        "anchor": "#justify-center"
+      },
+      {
+        "title": ".justify-end",
+        "anchor": "#justify-end"
+      },
+      {
+        "title": ".justify-between",
+        "anchor": "#justify-between"
+      },
+      {
+        "title": ".justify-around",
+        "anchor": "#justify-around"
+      }
+    ]
   },
   {
-    "isMultiple": false,
+    "isMultiple": true,
     "title": "🔝 Alineación",
-    "anchor": "#alineacion"
+    "anchor": "#alineacion",
+    "sublevels": [
+      {
+        "title": ".align-start",
+        "anchor": "#align-start"
+      },
+      {
+        "title": ".align-center",
+        "anchor": "#align-center"
+      },
+      {
+        "title": ".align-end",
+        "anchor": "#align-end"
+      }
+    ]
   },
   {
-    "isMultiple": false,
+    "isMultiple": true,
     "title": "🔣 Agrupación",
-    "anchor": "#agrupacion"
+    "anchor": "#agrupacion",
+    "sublevels": [
+      {
+        "title": ".wrap",
+        "anchor": "#wrap"
+      },
+      {
+        "title": ".nowrap",
+        "anchor": "#nowrap"
+      }
+    ]
   },
   {
     "isMultiple": false,

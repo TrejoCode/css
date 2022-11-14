@@ -11,6 +11,12 @@
     align-self: flex-start;
     margin: $marginLarge 0;
 
+    ul {
+        max-height: 700px;
+        overflow-y: overlay;
+
+    }
+
     li { 
         cursor: pointer;
         list-style: none;

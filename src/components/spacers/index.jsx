@@ -4,8 +4,8 @@
  * @description Componente de espacios en blanco <WhiteSpace>
  */
 
-const WhiteSpace = ({ size }) => {
-  return <div className={`white-space-${size}`}></div>;
+const WhiteSpace = ({ size, anchor }) => {
+  return <div className={`white-space-${size}`} id={anchor || "#"}></div>;
 };
 
 export default WhiteSpace;

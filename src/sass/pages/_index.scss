@@ -3,6 +3,28 @@
  * @description Estilos de la página
 */
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #cfcfcf #d1d1d1;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #d1d1d1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 8px;
+  border: 2px solid #ababab;
+}
+
 .page-home {
     
     background-color: var(--lightBg);
