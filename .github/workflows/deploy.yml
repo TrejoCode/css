@@ -22,4 +22,3 @@ jobs:
 
       - run: npm install
       - run: npm run build
-      - run: mv out /var/www/css.trejocode.com
