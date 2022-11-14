@@ -2,7 +2,7 @@ name: 🚀 Deploy Static Web
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
