@@ -2,6 +2,8 @@
 
 ![](https://img.shields.io/github/stars/trejocode/css) ![](https://img.shields.io/github/forks/trejocode/css) ![](https://img.shields.io/github/tag/trejocode/css) ![](https://img.shields.io/github/issues/trejocode/css)
 
+> Este repositorio se encuentra en modo de archivo. Esto significa que ya no se está manteniendo activamente y no se aceptarán nuevas contribuciones. Si tienes alguna pregunta o inquietud, por favor, siéntete libre de abrir un problema, pero ten en cuenta que es posible que no haya una respuesta inmediata. Gracias a todos los que han contribuido a este proyecto en el pasado. ¡Su apoyo ha sido invaluable!
+
 # 🎨 core.css
 
 #### **Hoja de estilos basada en flexbox para maquetar estructuras flexibles**

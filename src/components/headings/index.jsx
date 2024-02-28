@@ -16,4 +16,8 @@ const Heading3 = ({ content, anchor }) => {
   return <h3 id={anchor && anchor}>{content}</h3>;
 };
 
-export { Heading1, Heading2, Heading3 };
+const HeadingAlert = ({ content, anchor }) => {
+  return <span className="heading-alert" id={anchor && anchor}>{content}</span>;
+};
+
+export { Heading1, Heading2, Heading3, HeadingAlert };
